@@ -138,7 +138,7 @@ kamstrup_MC601_var = {
 	0x009A: "1 Software check sum (CHECK SUM)",
 	0x009B: "High-resolution energy register for testing purposes  (HIGH RES)",
 	0x009D: "ID number for top module (TOPMODUL ID)",
-	0x009E: "ID number for base module (BOTMODUL ID)",
+	0x009E: "ID number for base module (BOTMODUL ID)"
 }
 
 
