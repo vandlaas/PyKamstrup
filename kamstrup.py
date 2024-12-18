@@ -70,7 +70,8 @@ kamstrup_681_var = {
 	97:	"x",
 }
 # Values from "Multical 601 TECHNICAL DESCRIPTION 5512-301 GB/10.2008/Rev. H1"  page 86.
-# YET TO BE VERIYFIED
+# Should be the same for Multical 602 according to 5512-931_P1_GB_04.2023 page 104
+# YET TO BE VERIFIED
 kamstrup_MC601_var = {
 	0x003C: "Energy register 1: Heat energy (E1)",
 	0x005E: "Energy register 2: Control energy (E2)",
