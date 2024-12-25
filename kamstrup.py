@@ -47,7 +47,7 @@ kamstrup_382_var = {
 	0x005B: "Pressure in flow",
 	0x005C: "Pressure in return flow",
 	0x004A: "Current flow in flow",
-	0x004B: "Current flow in return flow"
+	0x004B: "Current flow in return flow",
 	0x03ff: "Power In",
 	0x0438: "Power p1 In",
 	0x0439: "Power p2 In",
@@ -198,7 +198,7 @@ escapes = {
 class kamstrup(object):
 
 	def __init__(self, serial_port = "/dev/cuaU0"):
-		self.debug_fd = open("/tmp/_kamstrup", "a")
+		self.debug_fd = open("./tmp/_kamstrup", "a")
 		self.debug_fd.write("\n\nStart\n")
 		self.debug_id = None
 
@@ -346,6 +346,6 @@ if __name__ == "__main__":
 
 	foo = kamstrup()
 
-	for i in kamstrup_382_var:
+	for i in kamstrup_MC601_var:
 		x,u = foo.readvar(i)
-		print("%-25s" % kamstrup_382_var[i], x, u)
+		print("%-25s" % kamstrup_MC601_var[i], x, u)
